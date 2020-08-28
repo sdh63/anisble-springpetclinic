@@ -1,0 +1,6 @@
+---
+- hosts: all
+
+  tasks:
+  - name: Start Spring Pet Clinic
+    shell: "./mvnw package && mv target/*.jar app.jar"
