@@ -5,5 +5,5 @@
   - name: Pull SpringPetClinic
     git:
       repo: "{{ springpetclinic_repo }}"
-      version: "{{ springpetclinc_branch }}"
+      version: "{{ springpetclinic_branch }}"
       dest: /var/www/springpetclinc/
