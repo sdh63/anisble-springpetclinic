@@ -1,0 +1,3 @@
+---
+springpetclinic_repo: "{{ lookup('env', 'SPRINGPETCLINIC_REPO') }}"
+springpetclinic_branch: "{{ lookup('env', 'SPRINGPETCLINIC_BRANCH') }}" 
