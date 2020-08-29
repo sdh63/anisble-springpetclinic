@@ -3,10 +3,10 @@
 
   tasks:
   - name: Start Spring Pet Clinic
-    command: ./mvnw package
+    shell: ./mvnw package
     args:
       chdir: /var/www/springpetclinic
   - name: Start Spring Pet Clinic
-    command: java -jar target/*.jar
+    shell: java -jar target/*.jar
     args:
       chdir: /var/www/springpetclinic
