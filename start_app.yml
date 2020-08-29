@@ -3,7 +3,7 @@
 
   tasks:
   - name: Start Spring Pet Clinic
-    script: /var/www/springpetclinic/mvnw
+    cmd: "/var/www/springpetclinic/mvnw"
     
   - name: Start Spring Pet Clinic
     shell: "java -jar /var/www/springpetclinic/*.jar" 
