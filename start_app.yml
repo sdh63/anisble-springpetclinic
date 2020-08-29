@@ -8,6 +8,6 @@
       cmd: ./mvnw package
     
   - name: Start Spring Pet Clinic
-     shell:
+    shell:
       chdir: /var/www/springpetclinic
       cmd: java -jar *.jar
