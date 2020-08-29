@@ -2,8 +2,8 @@
 - hosts: all
 
   tasks:
-  - name: install maven (and other packages if needed)
-  become: yes
-  apt: pkg={{ item }} state=latest update_cache=yes cache_valid_time=3600
-  with_items:
-    - maven
+  - name: Install Maven using YUM.
+    yum:
+      name: "maven"
+      state: latest  
+    become: true
