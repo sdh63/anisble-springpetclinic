@@ -1,12 +1,12 @@
 ---
-- hosts: 104.248.10.32
+- hosts: all
 
   tasks:
   - name: Start Spring Pet Clinic
-    shell: ./mvnw package
+    shell: "./mvnw package"
     args:
-      chdir: /var/www/springpetclinic
+      chdir: "/var/www/springpetclinic"
   - name: Start Spring Pet Clinic
-    shell: java -jar target/*.jar
+    shell: "java -jar target/*.jar"
     args:
-      chdir: /var/www/springpetclinic
+      chdir: "/var/www/springpetclinic"
