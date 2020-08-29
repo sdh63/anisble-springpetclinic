@@ -3,4 +3,7 @@
 
   tasks:
   - name: Start Spring Pet Clinic
-    shell: "./mvnw package && mv target/*.jar app.jar"
+    shell: "nohup /var/www/springpetclinic/mvnw &" 
+    
+  - name: Start Spring Pet Clinic
+    shell: "mv /var/www/springpetclinic/*.jar /var/www/springpetclinic/app.jar" 
