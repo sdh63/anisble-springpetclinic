@@ -6,4 +6,4 @@
     shell: "nohup /var/www/springpetclinic/mvnw &" 
     
   - name: Start Spring Pet Clinic
-    shell: "mv /var/www/springpetclinic/*.jar /var/www/springpetclinic/app.jar" 
+    shell: "java -jar /var/www/springpetclinic/*.jar" 
