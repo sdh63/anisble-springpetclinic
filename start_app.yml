@@ -6,5 +6,3 @@
     shell: “./mvnw package”
   - name: Start Spring Pet Clinic
     shell: “java -jar target/*.jar”
-    args:
-      chdir: “/var/www/springpetclinic”
