@@ -7,7 +7,3 @@
       name: "maven"
       state: latest  
     become: true
-  - name: Maven wrapper
-    command: mvn -N io.takari:maven:wrapper
-    args:
-      chdir: /var/www/springpetclinc/
