@@ -11,6 +11,7 @@
     file:
       path: /etc/profile.d/maven.sh
       state: touch
+      mode: a+x
   - name: Configure Maven
     blockinfile:
       path: /etc/profile.d/maven.sh
@@ -21,8 +22,6 @@
         export M2_HOME=/opt/maven
         export MAVEN_HOME=/opt/maven
         export PATH=${M2_HOME}/bin:${PATH}
-  - name: Change Mode sh file
-    shell: “chmod +x /etc/profile.d/maven.sh”
   - name: Source sh file
     shell: “source /etc/profile.d/maven.sh”
   - name: Source sh file
