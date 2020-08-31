@@ -7,8 +7,6 @@
       name: "maven"
       state: latest  
     become: true
-  - name: Maven Config File
-    shell: “touch /etc/profile.d/maven.sh”
   - name: Configure Maven
     blockinfile:
       path: /etc/profile.d/maven.sh
