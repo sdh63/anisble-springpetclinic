@@ -10,4 +10,4 @@
   - name: Maven wrapper
     command: mvn -N io.takari:maven:wrapper
     args:
-      chdir: /var/www/springpetclinic
+      chdir: /var/www/springpetclinc/
