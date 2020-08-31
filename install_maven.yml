@@ -7,20 +7,3 @@
       name: "maven"
       state: latest  
     become: true
-  - name: Touch a file
-    file:
-      path: /etc/profile.d/maven.sh
-      state: touch
-      mode: a+x
-  - name: Configure Maven
-    blockinfile:
-      path: /etc/profile.d/maven.sh
-      block: |
-        # Apache Maven Environmental Variables
-        # MAVEN_HOME for Maven 1 - M2_HOME for Maven 2
-        export JAVA_HOME=/usr/lib/jvm/jre-openjdk
-        export M2_HOME=/opt/maven
-        export MAVEN_HOME=/opt/maven
-        export PATH=${M2_HOME}/bin:${PATH}
-  - name: Start Spring Pet Clinic
-    shell: “./maven.sh”
