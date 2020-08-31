@@ -1,0 +1,26 @@
+---
+- hosts: all
+
+  tasks:
+  - name: Download Apache Maven
+    shell: “wget http://mirrors.ibiblio.org/apache/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.tar.gz –P /tmp”
+  - name: Extract Apache Maven
+    shell: “”
+  - name: Maven Config File
+    shell: “touch /etc/profile.d/maven.sh”
+  - name: Configure Maven
+    blockinfile:
+      dest:/etc/profile.d/maven.sh
+      block:
+        # Apache Maven Environmental Variables
+        # MAVEN_HOME for Maven 1 - M2_HOME for Maven 2
+        export JAVA_HOME=/usr/lib/jvm/jre-openjdk
+        export M2_HOME=/opt/maven
+        export MAVEN_HOME=/opt/maven
+        export PATH=${M2_HOME}/bin:${PATH}
+   - name: Change Mode sh file
+     shell: “chmod +x /etc/profile.d/maven.sh”  
+   - name: Source sh file
+     shell: “source /etc/profile.d/maven.sh”  
+   - name: Source sh file
+     shell: “mvn --version”  
