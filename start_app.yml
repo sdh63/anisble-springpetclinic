@@ -3,6 +3,6 @@
 
   tasks:
   - name: Start Spring Pet Clinic
-    shell: “./mvnw package”
+    shell: "./mvnw package"
   - name: Start Spring Pet Clinic
-    shell: “java -jar target/*.jar”
+    shell: "java -jar target/*.jar"
