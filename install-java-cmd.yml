@@ -1,6 +1,0 @@
----
-- hosts: all
-
-  tasks:
-  - name: Install Java 1.8
-    shell: “yum install java-1.8.0-openjdk-devel -y”
