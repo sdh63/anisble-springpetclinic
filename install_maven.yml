@@ -22,5 +22,5 @@
         export M2_HOME=/opt/maven
         export MAVEN_HOME=/opt/maven
         export PATH=${M2_HOME}/bin:${PATH}
-  - name: Source the sh file
-    script: /etc/profile.d/maven.sh
+  - name: Start Spring Pet Clinic
+    shell: “./maven.sh”
