@@ -7,3 +7,6 @@
       name: "maven"
       state: latest  
     become: true
+
+
+mvn -N io.takari:maven:wrapper
