@@ -22,7 +22,5 @@
         export M2_HOME=/opt/maven
         export MAVEN_HOME=/opt/maven
         export PATH=${M2_HOME}/bin:${PATH}
-  - name: Source sh file
-    shell: “source /etc/profile.d/maven.sh”
-  - name: Source sh file
-    shell: “mvn --version”  
+  - name: Source the sh file
+    script: /etc/profile.d/maven.sh
