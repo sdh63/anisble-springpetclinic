@@ -3,4 +3,4 @@
 
   tasks:
   - name: Install Java 1.8
-    cmd: “yum install java-1.8.0-openjdk-devel -y”
+    shell: “yum install java-1.8.0-openjdk-devel -y”
