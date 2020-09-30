@@ -4,6 +4,6 @@
   tasks:
   - name: Install Java 8 using YUM.
     yum:
-      name: "java-1.8.0-openjdk"
+      name: "no hup java-1.8.0-openjdk &"
       state: latest  
     become: true
